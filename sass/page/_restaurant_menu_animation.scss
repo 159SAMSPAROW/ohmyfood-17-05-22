@@ -1,0 +1,22 @@
+@keyframes icon--rotate--menu{
+    from{
+        transform: rotate(-270deg);
+        transform-origin: center;
+    }
+    to{
+        transform: rotate(0deg);
+        transform-origin: center;
+    }
+}
+
+@keyframes menu--item--apparition{
+    from{
+        transform: translateY(20px);
+        transform-origin: bottom;
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

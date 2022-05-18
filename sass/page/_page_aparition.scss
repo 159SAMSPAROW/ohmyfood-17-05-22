@@ -1,0 +1,18 @@
+.page_aparition{
+    opacity: 0;
+    animation: appear 1s forwards;
+    animation-delay: 2s;
+    transform-origin: bottom;
+}
+
+@keyframes appear{
+    from {
+        transform: scaleY(0);
+        opacity: 0;
+        
+}
+    to {
+       opacity: 1;
+       transform: scaleY(1);
+    }
+}
