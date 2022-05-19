@@ -57,12 +57,11 @@
     text-align: center;
     background-color: $clr_bg_logo;
 
-    @include tablet-only{
-        text-align: start;
-        height: auto;
-        background: linear-gradient(70deg $clr_primary, $clr_tertiary, $clr_secondary);
-    }
-
+        @include tablet-only{
+            text-align: start;
+            height: auto;
+        }
+    
     &__title { 
         display: flex;
         flex-direction: column;
@@ -72,6 +71,9 @@
             flex-direction: row;
             justify-content: space-around;
             margin-left: 2%;  
+        }
+        @include desktop-only{
+            justify-content: center;
         }
         }
 
