@@ -42,7 +42,6 @@
     position: absolute;
     top: 250px;
     left: 44%;
-    
   }
    
 }
@@ -73,9 +72,6 @@
   border-color: $clr_tertiary $clr_tertiary transparent transparent;
   animation: rotation 2.5s linear infinite;
 }
-
-
-
 
 @keyframes rotation {
   0% {
