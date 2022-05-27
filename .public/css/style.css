@@ -1283,7 +1283,6 @@ template {
   }
   to {
     transform: rotate(0deg);
-    transform-origin: center;
   }
 }
 @keyframes menu--item--apparition {
