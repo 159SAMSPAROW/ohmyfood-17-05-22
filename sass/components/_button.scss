@@ -6,25 +6,16 @@
     color: $clr_font_btn;
     border-radius: 25px;
     background-image: linear-gradient($clr_secondary,$clr_primary);
-    transform: scale(1);
     box-sizing: border-box;    
-    
+    transition: all 0.5s;
+
     &:hover{
-        transform: scale(1.01) ;
-        transition: all 1000ms ease-in-out;
-        box-shadow:4px 4px 4px $clr_primary;
-        background: linear-gradient($clr_primary,$clr_secondary);
-        opacity: 0.8;
-        font-size: large;
+        transition: all 0.5s ease-in-out;
+        box-shadow: 4px 4px 5px $clr_primary;
+        background-image:  linear-gradient($clr_primary,$clr_secondary) ;
+        opacity: 0.9;
+        
     }
-
-    &:focus{
-        transform: scale(1.01) ;
-        transition: all 1000ms ;
-        box-shadow:4px 4px 4px $clr_primary;
-        background: linear-gradient($clr_primary,$clr_secondary);
-    }
-
     @include tablet-only{
         width: 85%;
         margin: 20px 0 10px 0;
@@ -79,14 +70,16 @@
         width: 90%;
         height: 65px;
         box-shadow: 4px 4px 4px $clr_header_shadow;
-        color: black;
         border-radius: 17px;
         margin-bottom: 25px;
         background-color: $clr_bg_logo;
         font-size: large;
-    
+        transition: all 0.5s;
+        
         &:hover {
+            transition: all 0.5s;
             background-color: $clr_step_btn;
+            opacity: 0.8;
         }
 
         &:hover >i{
@@ -104,9 +97,9 @@
     }
 
     &__btn-1 > i, &__btn-2 > i, &__btn-3 > i{
-    margin-right: 15px;
-    margin-left: 15px;
-    opacity: 0.7;
+        margin-right: 15px;
+        margin-left: 15px;
+        opacity: 0.7;
 
     @include tablet-only{
         font-size: x-large;
@@ -127,11 +120,8 @@
     &__btn-3{
     padding: 20px 27px 20px 15px;
     }
-    .fa-mobile-screen-button:hover, .fa-list:hover, .fa-store:hover{
-        background-color: $clr_step_btn;
-        opacity: 1;
-    }
 }
+
 .command{
     display: flex;
     justify-content: center;
@@ -148,16 +138,17 @@
         border-radius: 25px;
         background-image: linear-gradient($clr_secondary,$clr_primary);
         transform: scale(1);
-         
+        transition: all 1s; 
         @include tablet-only{
             height: 65px;
             font-size: large;
         }
         &:hover{
             transform: scale(1.05) ;
-            transition: all 1000ms ;
+            transition: all 1s ;
             box-shadow:4px 4px 4px $clr_primary;
             background: linear-gradient($clr_primary,$clr_secondary);
+            opacity: 0.8;
         }
         
         &:focus{

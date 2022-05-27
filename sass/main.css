@@ -88,8 +88,8 @@ body, header, main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-top: 15px;
 }
 
@@ -98,7 +98,7 @@ body, header, main {
   top: 2%;
   left: 3%;
   font-size: 25px;
-  color: #0000;
+  color: $clr_header_arrow;
 }
 
 .home {
