@@ -1270,7 +1270,7 @@ template {
   opacity: 0;
 }
 .restaurant__card:hover .fa-solid, .restaurant__menu__content:hover .fa-solid {
-  transform: translateX (1);
+  transform: translateX(1);
   opacity: 1;
 }
 .restaurant__card .fa-light, .restaurant__menu__content .fa-light {
